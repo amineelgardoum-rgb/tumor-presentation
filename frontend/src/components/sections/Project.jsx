@@ -1,4 +1,4 @@
-import { FaPython,FaHtml5} from "react-icons/fa";
+import { FaPython,FaHtml5, FaKaggle} from "react-icons/fa";
 import MatrixBackground from "../MatrixBackground";
 import {
   SiCss3,
@@ -26,7 +26,8 @@ export const Project = () => {
       "Tensorflow",
       "Numpy",
       "Jinja",
-      "FastAPI"
+      "FastAPI",
+      "Kaggle"
     ],
     link: "https://github.com/amineelgardoum-rgb/tumor",
     video_link:"https://drive.google.com/file/d/1YpgZaO0c_Q_K_qkgTD9gN8g8OE3YMdhl/view?usp=drive_link",
@@ -75,8 +76,13 @@ export const Project = () => {
       color:"text-white",
       hoverColor:"hover:text-red-400",
       glow:"hover:[filter:drop-shadow(0_0_5px_red)_drop-shadow(0_0_10px_red)_drop-shadow(0_0_15px_red)]"
+    },
+    kaggle:{
+      icon:<FaKaggle />,
+      color:"text-white",
+      hoverColor:"hover:text-blue-500",
+      glow:"hover:[filter:drop-shadow(0_0_5px_blue)_drop-shadow(0_0_10px_blue)_drop-shadow(0_0_15px_blue)]"
     }
-    
   };
 
   const getSkillInfo = (skill) =>
