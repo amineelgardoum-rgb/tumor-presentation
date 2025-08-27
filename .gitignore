@@ -1,0 +1,7 @@
+.vscode
+*.pyc
+__pycache__
+.env
+.mkv
+vercel.json
+frontend\public\netlify.toml

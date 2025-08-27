@@ -1,0 +1,14 @@
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 20px limegreen);
+    opacity: 1;
+  }
+  50% {
+    filter: drop-shadow(0 0 0px limegreen);
+    opacity: 0.2; /* makes it fade */
+  }
+}
+
+.animate-glow {
+  animation: glow 1s infinite;
+}

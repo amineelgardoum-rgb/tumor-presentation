@@ -1,0 +1,22 @@
+@keyframes shadow_glowing {
+  0% {
+    filter: drop-shadow(0 0 5px green);
+  }
+  25% {
+    filter: drop-shadow(0 0 10px limegreen);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px darkgreen);
+  }
+  75% {
+    filter: drop-shadow(0 0 15px lightgreen);
+  }
+  100% {
+    filter: drop-shadow(0 0 30px green);
+  }
+}
+
+/* Only animate on hover */
+.shadow:hover {
+  animation: shadow_glowing 2s ease-in-out infinite alternate;
+}
